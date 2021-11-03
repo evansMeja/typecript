@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/evansMeja/typescript/issues"
   },
-  "homepage": "https://github.com/evansMeja/typescript#readme"
+  "homepage": "https://github.com/evansMeja/typescript#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
