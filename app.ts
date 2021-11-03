@@ -1,15 +1,28 @@
-import { NumericLiteral } from "@babel/types";
+const ADMIN = 1
+const USER = 2
+const READONLY = 3
 
-const Person:{
-    name:string;
-    age:number;
-    hobbies:string[];
-    role:[number, string]
-} = {
+ enum Role {ADMIN, USER, READONLY}
+
+// const Person:{
+//     name:string;
+//     age:number;
+//     hobbies:string[];
+//     role:[number, string]
+// } = {
+//     name: 'Evans Meja',
+//     age:23,
+//     hobbies:['coding','cooking','music'],
+//     role:[2,'author'] ,
+//     purpose:ADMIN
+// }
+
+
+const Person = {
     name: 'Evans Meja',
     age:23,
     hobbies:['coding','cooking','music'],
-    role:[2,'author'] 
+    role:Role.ADMIN ,
 }
 
 console.log(Person)
@@ -20,4 +33,8 @@ favActivities = ['sports']
 
 for (const hobby of Person.hobbies){
     console.log(hobby.toLocaleUpperCase())
+}
+
+if (Person.role == Role.ADMIN){
+    console.log('is admin')
 }
