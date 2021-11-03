@@ -1,16 +1,22 @@
-function combine(input1, input2, resultConversion) {
-    var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
-        result = +input1 + +input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
+function add(n1, n2) {
+    return n1 + n2;
 }
-var result1 = combine(1, 3, 'as-number');
-var result2 = combine('39', '56', 'as-number');
-var result3 = combine('Evans', 'Meja', 'as-text');
-console.log(result1);
-console.log(result2);
-console.log(result3);
+function printResult(num) {
+    console.log('Result: ' + num);
+}
+function AddAndHandle(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+printResult(56);
+var printValue;
+printValue = printResult;
+// will prevent re assigning
+// combined = 3
+printValue(67);
+var combinedValues;
+combinedValues = add;
+console.log(combinedValues(677, 90));
+AddAndHandle(10, 30, function (result) {
+    console.log("the sum is " + result);
+});
