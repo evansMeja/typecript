@@ -1,0 +1,19 @@
+{
+  "name": "typecript",
+  "version": "1.0.0",
+  "description": "learning typescript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evansMeja/typescript.git"
+  },
+  "author": "Evans Meja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evansMeja/typescript/issues"
+  },
+  "homepage": "https://github.com/evansMeja/typescript#readme"
+}
