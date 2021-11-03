@@ -1,40 +1,16 @@
-const ADMIN = 1
-const USER = 2
-const READONLY = 3
-
- enum Role {ADMIN, USER, READONLY}
-
-// const Person:{
-//     name:string;
-//     age:number;
-//     hobbies:string[];
-//     role:[number, string]
-// } = {
-//     name: 'Evans Meja',
-//     age:23,
-//     hobbies:['coding','cooking','music'],
-//     role:[2,'author'] ,
-//     purpose:ADMIN
-// }
-
-
-const Person = {
-    name: 'Evans Meja',
-    age:23,
-    hobbies:['coding','cooking','music'],
-    role:Role.ADMIN ,
+function combine(input1: number | string, input2: number | string){
+    let result;
+    if(typeof input1 === 'number' && typeof input2 === 'number'){
+        result = input1 + input2
+    }else{
+        result = input1.toString() + input2.toString()
+    }
+    return result
 }
 
-console.log(Person)
+const result1 = combine(1,3)
 
+const result2 = combine('Evans','Meja')
 
-let favActivities: string[];
-favActivities = ['sports']
-
-for (const hobby of Person.hobbies){
-    console.log(hobby.toLocaleUpperCase())
-}
-
-if (Person.role == Role.ADMIN){
-    console.log('is admin')
-}
+console.log(result1)
+console.log(result2)
