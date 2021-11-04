@@ -18,6 +18,6 @@ function generateError(message:string, code:number):never{
     // while(true){}
 }
 
-const result = generateError('An Error Occurred!', 500)
+generateError('An Error Occurred!', 500)
 
 // crashes the app, never returns anything

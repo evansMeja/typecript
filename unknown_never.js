@@ -12,5 +12,5 @@ function generateError(message, code) {
     };
     // while(true){}
 }
-generateError('An Error Occurred!', 500);
+var result = generateError('An Error Occurred!', 500);
 // crashes the app, never returns anything
